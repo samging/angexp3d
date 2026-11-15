@@ -1,4 +1,4 @@
-### Mesh & Manifold Coordinate Reduction Notes
+### Mesh Coordinate Reduction by angle (powwaveNd)
 #### Core:
 QR Decomposition: Uses a QR decomposition matrix to extract R (depth/scale) and rotate the coordinate space. \
 Parameter Storage: Stores the depth (R) with counted parameters of n × N - 2. \
@@ -15,12 +15,13 @@ Optimization Deviation: Uses a 45deg deviation for the `curve_fit` optimization 
   * 3D Plane MSE: `0.1198` -> `0.1066`
   * 20D Sinusoidal Manifold MSE: `0.3459` -> `0.1759`
 * Low High-Dimensional MSE Caveat: Some reconstructions show Mean Squared Errors around 7 × 10^−5 which happens only because the dimensionality reduction is minimal and almost nothing is actually being reconstructed.
-
 ---
-
 #### Suggestions along final notes
 * Recommended Scope: Use this approach for 3D to 4D meshes only and avoid higher dimensions.
 * **Deformation:** Although a maximum reduction of **50%** is possible on 3D meshes, the reconstructed meshes can still be significantly deformed.
+<img width="1757" height="652" alt="image" src="https://github.com/user-attachments/assets/ac7a12ce-7588-4e25-b853-f1a02af8e039" />
+
+---
 * **Included Files:**
   * Annotated Jupyter Notebook Full walkthrough with annotations and visualizations.
   * Generalized Python Script Standalone script to run and inspect the pure metrics directly without scrolling through the notebook.
