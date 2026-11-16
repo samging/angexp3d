@@ -25,3 +25,14 @@ Optimization Deviation: Uses a 45deg deviation for the `curve_fit` optimization 
 * **Included Files:**
   * Annotated Jupyter Notebook Full walkthrough with annotations and visualizations.
   * Generalized Python Script Standalone script to run and inspect the pure metrics directly without scrolling through the notebook.
+
+> vibe coded whl (not tested)
+```python
+import angexp3d
+result = angexp3d.run("mesh.obj", angles="auto", save_plot="out.png")
+result.reconstruction              # (n, 3) coordinates
+
+comp = angexp3d.Transformer3D("hybrid").compress(points)
+comp.save("mesh.npz")              # reload with angexp3d.Compressed.load
+points_back = comp.decompress()
+```
