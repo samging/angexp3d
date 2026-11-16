@@ -14,7 +14,7 @@ Optimization Deviation: Uses a 45deg deviation for the `curve_fit` optimization 
 * **Fourier-Power scalars:** Three additional scalars (amplitude, oscillation along x', and phase)—improved reconstruction across every tested geometry:
   * 3D Plane MSE: `0.1198` -> `0.1066`
   * 20D Sinusoidal Manifold MSE: `0.3459` -> `0.1759`
-* Low High-Dimensional MSE Caveat: Some reconstructions show Mean Squared Errors around 7 × 10^−5 which happens only because the dimensionality reduction is minimal and almost nothing is actually being reconstructed.
+* Low High-Dimensional MSE Caveat: Some reconstructions show Mean Squared Errors around 7 × 10^−5, which happens only because the dimensionality reduction is minimal and almost nothing is actually being reconstructed.
 ---
 #### Suggestions along final notes
 * Recommended Scope: Use this approach for 3D to 4D meshes only and avoid higher dimensions.
@@ -23,8 +23,8 @@ Optimization Deviation: Uses a 45deg deviation for the `curve_fit` optimization 
 
 ---
 * **Included Files:**
-  * Annotated Jupyter Notebook Full walkthrough with annotations and visualizations.
-  * Generalized Python Script Standalone script to run and inspect the pure metrics directly without scrolling through the notebook.
+  * Annotated Jupyter Notebook Full: walkthrough with annotations and visualizations.
+  * Generalized Python Script Standalone: script to run and inspect the pure metrics directly without scrolling through the notebook.
 
 ```python
 import angexp3d
