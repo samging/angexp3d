@@ -1,4 +1,4 @@
-### Mesh Coordinate Reduction by angle (powwaveNd)
+### Mesh Coordinate Reduction by angle (angexp3d)
 #### Core:
 QR Decomposition: Uses a QR decomposition matrix to extract R (depth/scale) and rotate the coordinate space. \
 Parameter Storage: Stores the depth (R) with counted parameters of n × N - 2. \
